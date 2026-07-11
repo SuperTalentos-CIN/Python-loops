@@ -1,57 +1,59 @@
-#for i in range(5):
-#    print(f"{i+1}° colocado")
+for i in range(5):
+   print(f"{i+1}° colocado")
 
-#iterar sobre uma lista com frutas
-#frutas = ["maçã", "banana", "laranja"]
+# iterar sobre uma lista com frutas
+frutas = ["maçã", "banana", "laranja"]
 
-#print(frutas[2])
-#for fruta in frutas:
-#    print(f"Eu gosto de {fruta}")
+print(frutas[2])
+for fruta in frutas:
+   print(f"Eu gosto de {fruta}")
 
-# len -> length
-#for i in range(len(frutas)):
-#    print(f"Fruta: {frutas[i]}")
-
-
-#print("1.3 Loop for com range() (início, fim, passo)")
-# range(2, 10, 2) -> começa no 2, vai até ao 9, saltando de 2 em 2
-#for i in range(2, 11, 2):
-#    if i % 2 == 0:
- #       print(f"Número par: {i}")
-
- #   print(f"Número par, que legal\n")
+#len = length
+for i in range(len(frutas)):
+   print(f"Fruta: {frutas[i]}")
 
 
-#print("1.4 Iterar sobre uma String") # Strings são listas disfarçadas
-##palavra = "Python" # ['p','y','t','h','o','n']
+print("1.3 Loop for com range() (início, fim, passo)")
+range(2, 10, 2) # -> começa no 2, vai até ao 9, saltando de 2 em 2
+for i in range(2, 11, 2):
+   if i % 2 == 0:
+       print(f"Número par: {i}")
 
-#for letra in palavra:
-#    print(f"Letra: {letra}")
-
-#for i in range(len(palavra) - 3): # length = comprimento
-#    print(f"Letra: {palavra[i]}")
-
-
-#========Loop while=======
-#print(" LOOP WHILE")
-# O loop while executa enquanto a condição for verdadeira
-#contador = 15
-#while contador < 20:
-#   print(f"Contador atual: {contador}")
-#   contador += 1  # Crucial: atualizar a variável para evitar loops infinitos
+   print(f"Número par, que legal\n")
 
 
-#print("CONTROLES DE LOOP (break e continue)")
+print("1.4 Iterar sobre uma String") # Strings são listas disfarçadas
+palavra = "Python" # ['p','y','t','h','o','n']
 
-##print("3.1 Uso do 'break'")
+for letra in palavra:
+   print(f"Letra: {letra}")
+
+for i in range(len(palavra) - 3): # length = comprimento
+   print(f"Letra: {palavra[i]}")
+
+
+# ========Loop while=======
+print(" LOOP WHILE")
+
+#O loop while executa enquanto a condição for verdadeira
+contador = 15
+while contador < 20:
+  print(f"Contador atual: {contador}")
+  contador += 1  # Crucial: atualizar a variável para evitar loops infinitos
+
+
+print("CONTROLES DE LOOP (break e continue)")
+
+#print("3.1 Uso do 'break'")
 # O 'break' serve para sair do loop imediatamente
-#for numero in range(10):
-#    if numero == 5:
-#        print("Encontrei o 5! Interrupção do loop")
-#        break
-#    print(f"Número: {numero}")
-"""
+for numero in range(10):
+   if numero == 5:
+       print("Encontrei o 5! Interrupção do loop")
+       break
+   print(f"Número: {numero}")
+
 print(" 3.2 Uso do 'continue' ")
+
 # O 'continue' serve para saltar a iteração atual e passar para a próxima
 for numero in range(5):
     if numero == 2:
@@ -59,9 +61,9 @@ for numero in range(5):
         continue
     print(f"Número: {numero}")
 
-"""
 
-"""
+
+
 print(" 'ELSE' EM LOOPS")
 # Em Python, os loops podem ter um bloco 'else'.
 # Ele é executado apenas se o loop terminar normalmente (sem o uso do 'break').
@@ -92,5 +94,5 @@ frutas = ["maçã", "cereja"]
 for adj in adjetivos:
     for fruta in frutas:
         print(f"A {fruta} é {adj}")
-"""
+
 
